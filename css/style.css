@@ -1,0 +1,116 @@
+/** STYLE GUIDES  */
+/* - FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+
+## Layout
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700
+*/
+
+/** GENERAL STYLES  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.content {
+  width: 144rem;
+  background-color: hsl(212, 45%, 89%);
+  margin: 0 auto;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+  margin-bottom: 3.2rem;
+
+  box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.09);
+}
+
+/** Card styles  */
+
+.card {
+  margin: 0 auto;
+  width: 32rem;
+  padding: 1.6rem;
+  background-color: hsl(0, 0%, 100%);
+
+  border-radius: 1.8rem;
+  box-shadow: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.09);
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.caption-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  padding: 0 1.2rem;
+  margin: 1.8rem 0;
+}
+
+.card-heading {
+  font-size: 2.2rem;
+  color: hsl(218, 44%, 22%);
+}
+
+.card-subcaption {
+  font-size: 1.5rem;
+  color: hsl(220, 15%, 55%);
+}
+
+/** FrontEndMentor STYLES  */
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 3.2rem;
+  color: #888;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+/** media for mobile STYLES  */
+@media (max-width: 90em) {
+  .content {
+    width: auto;
+    /* height: 100vh; */
+    min-width: 37.5rem;
+    /* padding-bottom: 0 */
+  }
+
+  .attribution {
+    min-width: 37.5rem;
+  }
+}
